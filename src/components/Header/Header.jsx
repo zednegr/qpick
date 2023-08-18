@@ -4,6 +4,9 @@ import "./header.scss"
 // Import BoxIcons
 import 'boxicons'
 
+// Import NavLink
+import { NavLink } from "react-router-dom"
+
 function Header() {
 
     return (
@@ -13,9 +16,11 @@ function Header() {
 
                     <div className="navbar-left">
 
-                        <div className="navbar-brand">
-                            <h2 className="brand-h2">QPICK</h2>
-                        </div>
+                        <NavLink to={'/'}>
+                            <div className="navbar-brand">
+                                <h2 className="brand-h2">QPICK</h2>
+                            </div>
+                        </NavLink>
 
                         <div className="navbar-filter">
                             <box-icon name='mobile-alt'></box-icon>
