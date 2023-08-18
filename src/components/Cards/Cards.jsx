@@ -5,6 +5,7 @@ import "./cards.scss"
 import Case from "../../assets/img/card-case.png"
 import HeadPhones from "../../assets/img/card-headphones.png"
 import AirPods from "../../assets/img/card-airpodspro.png"
+import Star from "../../assets/svg/star.svg"
 
 function Cards() {
 
@@ -15,39 +16,7 @@ function Cards() {
                     <h4 className="cards-start-h4">Чехлы</h4>
                 </div>
                 <div className="cards-wrapper">
-                    <div className="card">
 
-                        <div className="card-top">
-                            <img className="card-top-img" src={Case} alt="Network EROR" />
-                        </div>
-
-                        <div className="card-middle">
-                            <h4 className="card-middle-h4">Силиконовые</h4>
-                        </div>
-
-                    </div>
-                    <div className="card">
-
-                        <div className="card-top">
-                            <img className="card-top-img" src={Case} alt="Network EROR" />
-                        </div>
-
-                        <div className="card-middle">
-                            <h4 className="card-middle-h4">Силиконовые</h4>
-                        </div>
-
-                    </div>
-                    <div className="card">
-
-                        <div className="card-top">
-                            <img className="card-top-img" src={Case} alt="Network EROR" />
-                        </div>
-
-                        <div className="card-middle">
-                            <h4 className="card-middle-h4">Силиконовые</h4>
-                        </div>
-
-                    </div>
                     <div className="card">
 
                         <div className="card-top">
@@ -55,32 +24,28 @@ function Cards() {
                         </div>
 
                         <div className="card-middle">
-                            <h4 className="card-middle-h4">Силиконовые</h4>
+
+                            <div className="card-middle-name">
+                                <h4 className="card-middle-name-h4">Apple BYZ S852I</h4>
+                            </div>
+
+                            <div className="card-middle-price">
+                                <h4 className="card-middle-price-h4">2927 ₸</h4>
+                            </div>
+
+                        </div>
+
+                        <div className="card-bottom">
+
+                            <div className="card-bottom-rating">
+                                <img src={Star} />
+                                <h4 className="card-bottom-rating-h4">4.7</h4>
+                            </div>
+
                         </div>
 
                     </div>
-                    <div className="card">
 
-                        <div className="card-top">
-                            <img className="card-top-img" src={HeadPhones} alt="Network EROR" />
-                        </div>
-
-                        <div className="card-middle">
-                            <h4 className="card-middle-h4">Силиконовые</h4>
-                        </div>
-
-                    </div>
-                    <div className="card">
-
-                        <div className="card-top">
-                            <img className="card-top-img" src={AirPods} alt="Network EROR" />
-                        </div>
-
-                        <div className="card-middle">
-                            <h4 className="card-middle-h4">Силиконовые</h4>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </section>
