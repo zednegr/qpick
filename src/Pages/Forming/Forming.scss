@@ -12,6 +12,12 @@
     }
 }
 
+.forming-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: start;
+}
+
 .input-card {
     width: 445px;
     height: 513px;
@@ -110,4 +116,49 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.order-card {
+    width: 444.439px;
+    height: auto;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+}
+
+.order-card-top-h4 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.order-card-middle {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.order-card-middle-products-p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.order-card-middle-price-p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 12px;
 }

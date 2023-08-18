@@ -43,6 +43,23 @@ function Forming() {
 
                     <div className="cards-wrapper">
                         <div className="order-card">
+                            <div className="order-card-top">
+                                <h4 className="order-card-top-h4">Ваш заказ</h4>
+                            </div>
+
+                            <div className="order-card-middle">
+                                <div className="order-card-middle-products">
+                                    <p className="order-card-middle-products-p">Наушники Apple BYZ S852I</p>
+                                    <p className="order-card-middle-products-p">Доставка</p>
+                                    <p className="order-card-middle-products-p">К оплате</p>
+                                </div>
+
+                                <div className="order-card-middle-price">
+                                    <p className="order-card-middle-price-p">₸ 2 927</p>
+                                    <p className="order-card-middle-price-p">₸ 2 927</p>
+                                    <p className="order-card-middle-price-p">₸ 2 927</p>
+                                </div>
+                            </div>
 
                         </div>
 
