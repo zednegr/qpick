@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar-brand {
+    .brand-h2 {
+        color: #101010;
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+.navbar-left {
+    display: flex;
+    gap: 75px;
+}
+
+.navbar-filter {
+    display: flex;
+    gap: 15px;
+
+    .navbar-filter-h4 {
+        color: #101010;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.nav-list {
+    display: flex;
+    gap: 45px;
+}
