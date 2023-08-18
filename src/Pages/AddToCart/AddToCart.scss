@@ -1,0 +1,84 @@
+.addToCart-start {
+    margin-bottom: 13px;
+
+    .addToCart-start-h5 {
+        color: #1C1C27;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.addToCart-card {
+    width: 633px;
+    height: auto;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+}
+
+.addToCart-card-top {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.addToCart-product-name {
+    .addToCart-product-name-h4 {
+        color: #1C1C27;
+        font-family: Montserrat;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .addToCart-product-price-h4 {
+        color: #AAA;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.addToCart-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addToCart-middle-counter {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+
+    .addToCart-middle-counter-h4 {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.addToCart-middle-price {
+    .addToCart-middle-price-h4 {
+        color: #1C1C27;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}

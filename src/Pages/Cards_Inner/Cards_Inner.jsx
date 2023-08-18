@@ -5,6 +5,8 @@ import "./cards_inner.scss"
 import CardsInner1Img from "../../assets/img/cards-inner-1.png"
 import CardsInner2Img from "../../assets/img/cards-inner-2.png"
 
+// Import NavLink
+import { NavLink } from "react-router-dom"
 
 function CardsInner() {
 
@@ -59,7 +61,10 @@ function CardsInner() {
 
                         <div className="cards-inner-btns">
                             <button className="cards-inner-btn">Купить!</button>
-                            <button className="cards-inner-btn">Добавить в корзину</button>
+                            
+                            <NavLink to={'/addToCart'}>
+                                <button className="cards-inner-btn">Добавить в корзину</button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

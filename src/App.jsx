@@ -6,6 +6,7 @@ import Header from "./components/Header/Header"
 import Hero from './components/Hero/Hero'
 import CardsInner from "./Pages/Cards_Inner/Cards_Inner"
 import Home from "./Pages/Home/Home"
+import AddToCart from "./Pages/AddToCart/AddToCart"
 import './App.css'
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home />} />
         <Route path="/cards_inner" element={<CardsInner />} />
+        <Route path="/addToCart" element={<AddToCart />} />
       </Routes>
       <Footer />
     </>
