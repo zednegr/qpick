@@ -7,6 +7,9 @@ import CounterPlus from "../../assets/svg/counter-plus.svg"
 import CounterMinus from "../../assets/svg/counter-minus.svg"
 import Map from "../../assets/img/map.png"
 
+// Import NavLink
+import { NavLink } from "react-router-dom"
+
 function AddToCart() {
 
     return (
@@ -18,7 +21,7 @@ function AddToCart() {
 
                 <div className="addToCart-wrapper">
                     <div className="addToCart-card-map">
-                        
+
                         <div className="addToCart-card">
 
                             <div className="addToCart-card-top">
@@ -73,7 +76,9 @@ function AddToCart() {
                         </div>
 
                         <div className="addToCart-clearance-btns">
-                            <button className="addToCart-clearance-btn">Перейти к оформлению</button>
+                            <NavLink to={'/forming'}>
+                                <button className="addToCart-clearance-btn">Перейти к оформлению</button>
+                            </NavLink>
                         </div>
                     </div>
 
