@@ -162,3 +162,57 @@
     line-height: normal;
     margin-bottom: 12px;
 }
+
+.number-card {
+    width: 441px;
+    height: auto;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+}
+
+.number-card-top-h4 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.number-card-middle-inputs {
+    display: flex;
+    justify-content: center;
+
+    .number-card-input {
+        width: 418px;
+        height: 45px;
+        border-radius: 15px;
+        background: #D6D6D6;
+        color: #8E8E8E;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 20px;
+        outline: none;
+        border: none;
+    }
+}
+
+.upload-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    background: #101010;
+    padding: 10px 53px;
+    cursor: pointer;
+}

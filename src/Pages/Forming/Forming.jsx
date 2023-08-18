@@ -63,13 +63,20 @@ function Forming() {
 
                         </div>
 
-                        <div className="payment-card">
-
-                        </div>
-
                         <div className="number-card">
+                            <div className="number-card-top">
+                                <h4 className="number-card-top-h4">Номер получателя</h4>
+                            </div>
 
+                            <div className="number-card-middle-inputs">
+                                <input className="number-card-input" type="number" placeholder="+998 __ ___ ___" />
+                            </div>
                         </div>
+
+                        <div className="upload-btn">
+                            <a className="upload-btn">Закончить оформление</a>
+                        </div>
+
                     </div>
                 </div>
             </div>

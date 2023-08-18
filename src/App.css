@@ -7,6 +7,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background: #EAEAEA;
+}
+
 ul {
     list-style: none;
 }
