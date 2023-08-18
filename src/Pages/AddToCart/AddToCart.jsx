@@ -5,6 +5,7 @@ import "./addtocart.scss"
 import HeadPhone from "../../assets/img/card-headphones.png"
 import CounterPlus from "../../assets/svg/counter-plus.svg"
 import CounterMinus from "../../assets/svg/counter-minus.svg"
+import Map from "../../assets/img/map.png"
 
 function AddToCart() {
 
@@ -16,7 +17,8 @@ function AddToCart() {
                 </div>
 
                 <div className="addToCart-wrapper">
-
+                    <div className="addToCart-card-map">
+                        
                         <div className="addToCart-card">
 
                             <div className="addToCart-card-top">
@@ -44,16 +46,36 @@ function AddToCart() {
                             </div>
                         </div>
 
+                        <div className="addToCart-map">
 
-                        <div className="addToCart-total">
-                            <div className="addToCart-total-top">
-                                <h4 className="addToCart-total-top-h4"></h4>
+                            <div className="addToCart-card-top">
+                                <h4 className="addToCart-map-h4">Доставка</h4>
                             </div>
 
-                            <div className="addToCart-clearance-btn">
-                                <button>Перейти к оформлению</button>
+                            <div className="addToCart-map-middle">
+                                <div className="addToCart-middle-map">
+                                    <img src={Map} alt="" />
+                                </div>
+
+                                <div className="addToCart-middle-map-price">
+                                    <h4 className="addToCart-middle-delivery-h4">Доставка курьером</h4>
+                                    <h4 className="addToCart-middle-map-price-h4">2 927 ₸</h4>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+
+                    <div className="addToCart-total">
+                        <div className="addToCart-total-top">
+                            <h4 className="addToCart-total-top-h4">ИТОГО</h4>
+                            <h4 className="addToCart-price-top-h4">₸ 2 927</h4>
+                        </div>
+
+                        <div className="addToCart-clearance-btns">
+                            <button className="addToCart-clearance-btn">Перейти к оформлению</button>
+                        </div>
+                    </div>
 
                 </div>
             </div>
