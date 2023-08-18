@@ -33,7 +33,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        cursor: pointer;
         margin-bottom: 10px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: red;
+        }
     }
 }
 
@@ -72,6 +78,11 @@
         font-weight: 500;
         line-height: normal;
         cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: red;
+        }
     }
 }
 
