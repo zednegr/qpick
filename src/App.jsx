@@ -7,6 +7,7 @@ import Hero from './components/Hero/Hero'
 import CardsInner from "./Pages/Cards_Inner/Cards_Inner"
 import Home from "./Pages/Home/Home"
 import AddToCart from "./Pages/AddToCart/AddToCart"
+import Forming from "./Pages/Forming/Forming"
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cards_inner" element={<CardsInner />} />
         <Route path="/addToCart" element={<AddToCart />} />
+        <Route path="/forming" element={<Forming />} />
       </Routes>
       <Footer />
     </>

@@ -1,0 +1,113 @@
+.forming-start {
+    padding-top: 30px;
+    padding-bottom: 12px;
+
+    .forming-start-h4 {
+        color: #1C1C27;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.input-card {
+    width: 445px;
+    height: 513px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    margin-bottom: 118px;
+}
+
+.input-card-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .input-card-top-h4 {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .input-card-top-price-h4 {
+        color: #000;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.input-card-middle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.input-card-bottom {
+    .input-card-bottom-h4 {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 18px;
+    }
+}
+
+.inputs-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.input-mini-wrap {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input {
+    width: 410.867px;
+    height: 45px;
+    border-radius: 15px;
+    background: #D6D6D6;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: #8E8E8E;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.input-mini {
+    width: 164.06px;
+    height: 45px;
+    border-radius: 15px;
+    background: #D6D6D6;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: #8E8E8E;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
