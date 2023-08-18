@@ -6,6 +6,8 @@
 }
 
 .navbar-brand {
+    cursor: pointer;
+
     .brand-h2 {
         color: #101010;
         font-family: Montserrat;
@@ -23,6 +25,7 @@
 
 .navbar-filter {
     display: flex;
+    align-items: center;
     gap: 15px;
 
     .navbar-filter-h4 {
@@ -32,6 +35,11 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+    }
+
+    select {
+        border: none;
+        cursor: pointer;
     }
 }
 
