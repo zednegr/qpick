@@ -1,0 +1,128 @@
+.cards_inner_section {
+    padding-top: 58px;
+}
+
+.cards_inner_start {
+    .cards_inner_start_h5 {
+        color: #838383;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+}
+
+.cards-inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    padding: 70px;
+    cursor: pointer;
+}
+
+.cards-inner-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.cards-inner-middle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 560px;
+    bottom: 27px;
+}
+
+.cards-inner-middle-name-h4 {
+    color: #1C1C27;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cards-inner-middle-price-h4 {
+    color: #DF6464;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cards-inner-description-btn {
+    display: flex;
+    gap: 31px;
+    padding-top: 23px;
+    padding-bottom: 19px;
+}
+
+.cards-inner-description {
+    width: 824px;
+    height: auto;
+    border-radius: 15px;
+    background: #F9F9F9;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+
+    .cards-inner-description-top {
+        width: 824px;
+        height: 65px;
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+        padding: 20px;
+
+        .cards-inner-description-top-h4 {
+            color: #1C1C27;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+
+.cards-inner-description-list {
+    padding: 20px;
+    cursor: pointer;
+
+    .cards-inner-description-list-p {
+        color: #1C1C27;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.cards-inner-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.cards-inner-btn {
+    border-radius: 10px;
+    background: #101010;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.50);
+    padding: 10px 42px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
