@@ -23,8 +23,8 @@ function Header() {
                     </div>
 
                     <ul className="nav-list">
-                        <li><box-icon name='heart'></box-icon></li>
-                        <li><box-icon name='shopping-bag'></box-icon></li>
+                        <li className="nav-icon"><box-icon name='heart'></box-icon></li>
+                        <li className="nav-icon"><box-icon name='shopping-bag'></box-icon></li>
                     </ul>
 
                 </nav>

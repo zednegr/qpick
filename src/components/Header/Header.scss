@@ -38,4 +38,8 @@
 .nav-list {
     display: flex;
     gap: 45px;
+
+    .nav-icon {
+        cursor: pointer;
+    }
 }
