@@ -1,4 +1,7 @@
+// Import SASS
 import "./header.scss"
+
+// Import BoxIcons
 import 'boxicons'
 
 function Header() {
