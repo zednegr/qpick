@@ -10,7 +10,29 @@ import Star from "../../assets/svg/star.svg"
 // Import NavLink
 import { NavLink } from "react-router-dom"
 
+// Import React Hooks
+import { useState, useEffect } from "react"
+
+// Import Axios
+import axios from "axios"
+
+
 function Cards() {
+
+    const [data, setGetData] = useState()
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        axios('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/product')
+            .then((res) => setGetData(res.data))
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [])
+
+    if (loading) {
+        return <h1>Loading...</h1>
+    }
 
     return (
         <section className="cards-section">
@@ -20,36 +42,43 @@ function Cards() {
                 </div>
                 <div className="cards-wrapper">
 
-                    <NavLink to={'/cards_inner'}>
-                        <div className="card">
 
-                            <div className="card-top">
-                                <img className="card-top-img" src={HeadPhones} alt="Network EROR" />
-                            </div>
+                    {
+                        data?.map(item => {
+                            return (
+                                <NavLink to={'/cards_inner'}>
+                                    <div className="card">
 
-                            <div className="card-middle">
+                                        <div className="card-top">
+                                            <img className="card-top-img" src={item?.img} width={'219px'} height={'237px'} alt="Network EROR" />
+                                        </div>
 
-                                <div className="card-middle-name">
-                                    <h4 className="card-middle-name-h4">Apple BYZ S852I</h4>
-                                </div>
+                                        <div className="card-middle">
 
-                                <div className="card-middle-price">
-                                    <h4 className="card-middle-price-h4">2927 ₸</h4>
-                                </div>
+                                            <div className="card-middle-name">
+                                                <h4 className="card-middle-name-h4">Apple BYZ S852I</h4>
+                                            </div>
 
-                            </div>
+                                            <div className="card-middle-price">
+                                                <h4 className="card-middle-price-h4">2927 ₸</h4>
+                                            </div>
 
-                            <div className="card-bottom">
+                                        </div>
 
-                                <div className="card-bottom-rating">
-                                    <img src={Star} />
-                                    <h4 className="card-bottom-rating-h4">4.7</h4>
-                                </div>
+                                        <div className="card-bottom">
 
-                            </div>
+                                            <div className="card-bottom-rating">
+                                                <img src={Star} />
+                                                <h4 className="card-bottom-rating-h4">4.7</h4>
+                                            </div>
 
-                        </div>
-                    </NavLink>
+                                        </div>
+
+                                    </div>
+                                </NavLink>
+                            )
+                        })
+                    }
 
                 </div>
             </div>
