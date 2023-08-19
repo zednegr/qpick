@@ -1,0 +1,52 @@
+.create-start {
+    padding-top: 20px;
+
+    .create-start-h4 {
+        color: #838383;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.input-wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+
+    input {
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(128, 128, 128.5);
+        font-size: 15px;
+        border-radius: 5px;
+        outline-color: dodgerblue;
+    }
+}
+
+.create-post-btn {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    padding: 9px 12px;
+    background-color: dodgerblue;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 19px;
+}

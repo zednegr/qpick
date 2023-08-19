@@ -9,6 +9,7 @@ import Home from "./Pages/Home/Home"
 import AddToCart from "./Pages/AddToCart/AddToCart"
 import Forming from "./Pages/Forming/Forming"
 import './App.css'
+import Create from "./Pages/Create/Create"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/cards_inner" element={<CardsInner />} />
         <Route path="/addToCart" element={<AddToCart />} />
         <Route path="/forming" element={<Forming />} />
+        <Route path="/create" element={<Create />} />
       </Routes>
       <Footer />
     </>
