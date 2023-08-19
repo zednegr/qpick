@@ -7,10 +7,48 @@ import CounterPlus from "../../assets/svg/counter-plus.svg"
 import CounterMinus from "../../assets/svg/counter-minus.svg"
 import Map from "../../assets/img/map.png"
 
-// Import NavLink
+// Import React Router Dom
 import { NavLink } from "react-router-dom"
+import { useParams } from "react-router-dom"
+
+// Import React Hooks
+import { useState, useEffect } from "react"
+
+// Import Axios
+import axios from "axios"
+
 
 function AddToCart() {
+
+    const [data, setGetData] = useState()
+    const [loading, setLoading] = useState(true)
+    const { productId } = useParams()
+
+
+    // Counter 
+    const [count, setCount] = useState(1)
+
+    const plus = () => {
+        setCount(count + 1);
+    };
+
+    const minus = () => {
+        if (count > 1) {
+            setCount(count - 1);
+        }
+    };
+
+    useEffect(() => {
+        axios(`https://64e080ca50713530432c5e47.mockapi.io/apple-shop/product/${productId}`)
+            .then((res) => setGetData(res.data))
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [])
+
+    if (loading) {
+        return <h1>Loading...</h1>
+    }
 
     return (
         <section className="addToCart-section">
@@ -26,25 +64,25 @@ function AddToCart() {
 
                             <div className="addToCart-card-top">
                                 <div className="addToCart-product">
-                                    <img className="addToCart-product-img" width={'146px'} height={'136px'} src={HeadPhone} />
+                                    <img className="addToCart-product-img" width={'146px'} height={'136px'} src={data?.img} />
                                 </div>
 
                                 <div className="addToCart-product-name">
-                                    <h4 className="addToCart-product-name-h4">Apple BYZ S852I</h4>
-                                    <h4 className="addToCart-product-price-h4">2 927 ₸</h4>
+                                    <h4 className="addToCart-product-name-h4">{data?.name}</h4>
+                                    <h4 className="addToCart-product-price-h4">{data?.price} ₸</h4>
                                 </div>
 
                             </div>
 
                             <div className="addToCart-middle">
                                 <div className="addToCart-middle-counter">
-                                    <img src={CounterMinus} alt="Nerwork ERROR" />
-                                    <h4 className="addToCart-middle-counter-h4">1</h4>
-                                    <img src={CounterPlus} alt="Network ERROR" />
+                                    <button className="addToCart-middle-counter-minus-btn" onClick={minus}>-</button>
+                                    <h4 className="addToCart-middle-counter-h4">{count}</h4>
+                                    <button className="addToCart-middle-counter-plus-btn" onClick={plus}>+</button>
                                 </div>
 
                                 <div className="addToCart-middle-price">
-                                    <h4 className="addToCart-middle-price-h4">2 927 ₸</h4>
+                                    <h4 className="addToCart-middle-price-h4">{data?.price} ₸</h4>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +110,7 @@ function AddToCart() {
                     <div className="addToCart-total">
                         <div className="addToCart-total-top">
                             <h4 className="addToCart-total-top-h4">ИТОГО</h4>
-                            <h4 className="addToCart-price-top-h4">₸ 2 927</h4>
+                            <h4 className="addToCart-price-top-h4">₸ {data?.price}</h4>
                         </div>
 
                         <div className="addToCart-clearance-btns">

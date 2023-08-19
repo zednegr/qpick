@@ -85,7 +85,7 @@ function CardsInner() {
                         </div>
 
                         <div className="cards-inner-btns">
-                            <NavLink to={'/addToCart'}>
+                            <NavLink to={`/addToCart/${data.id}`}>
                                 <button className="cards-inner-btn">Купить!</button>
                             </NavLink>
 

@@ -77,7 +77,23 @@
         line-height: normal;
     }
 
-    img {
+    .addToCart-middle-counter-minus-btn {
+        padding: 5px 13px;
+        border: none;
+        border-radius: 35.167px;
+        background: #FFCE7F;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .addToCart-middle-counter-plus-btn {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 35.167px;
+        background: #FFCE7F;
+        color: #fff;
+        font-size: 20px;
         cursor: pointer;
     }
 }
