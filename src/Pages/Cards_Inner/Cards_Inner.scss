@@ -27,19 +27,23 @@
 
 .cards-inner-top {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .cards-inner-middle {
-    position: absolute;
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 600px;
-    bottom: 27px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 70px;
 }
 
+.cards-inner-middle-name {
+    width: 530px;
+}
 .cards-inner-middle-name-h4 {
     color: #1C1C27;
     font-family: Montserrat;
@@ -57,6 +61,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    white-space: nowrap;
 }
 
 .cards-inner-description-btn {

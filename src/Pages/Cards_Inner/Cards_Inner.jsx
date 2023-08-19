@@ -5,11 +5,36 @@ import "./cards_inner.scss"
 import CardsInner1Img from "../../assets/img/cards-inner-1.png"
 import CardsInner2Img from "../../assets/img/cards-inner-2.png"
 
-// Import NavLink
+// Import React Router Dom
 import { NavLink } from "react-router-dom"
+import { useParams } from "react-router-dom"
+
+// Import React Hooks
+import { useState, useEffect } from "react"
+
+// Import Axios
+import axios from "axios"
+
 
 function CardsInner() {
 
+    const [data, setGetData] = useState()
+    const [loading, setLoading] = useState(true)
+    const { productId } = useParams()
+
+    useEffect(() => {
+        axios(`https://64e080ca50713530432c5e47.mockapi.io/apple-shop/product/${productId}`)
+            .then((res) => setGetData(res.data))
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [])
+
+    if (loading) {
+        return <h1>Loading...</h1>
+    }
+
+    console.log(data);
     return (
         <section className="cards_inner_section">
             <div className="container">
@@ -20,15 +45,15 @@ function CardsInner() {
 
                     <div className="cards-inner">
                         <div className="cards-inner-top">
-                            <img src={CardsInner1Img} alt="Network ERROR" />
-                            <img src={CardsInner2Img} alt="Network ERROR" />
-                            <img src={CardsInner2Img} alt="Network ERROR" />
+                            <img className="cards-inner-top-img" src={data?.img} alt="Network ERROR" />
                         </div>
 
                         <div className="cards-inner-middle">
-                            <h4 className="cards-inner-middle-name-h4">BOROFONE BH32</h4>
+                            <div className="cards-inner-middle-name">
+                                <h4 className="cards-inner-middle-name-h4">{data?.name}</h4>
 
-                            <h4 className="cards-inner-middle-price-h4">2 927 ₸</h4>
+                            </div>
+                            <h4 className="cards-inner-middle-price-h4">{data?.price} ₸</h4>
                         </div>
                     </div>
 
