@@ -56,11 +56,11 @@ function Cards() {
                                         <div className="card-middle">
 
                                             <div className="card-middle-name">
-                                                <h4 className="card-middle-name-h4">Apple BYZ S852I</h4>
+                                                <h4 className="card-middle-name-h4">{item?.name.length > 20 ? item?.name.slice(0, 40) + "..." : item?.name}</h4>
                                             </div>
 
                                             <div className="card-middle-price">
-                                                <h4 className="card-middle-price-h4">2927 ₸</h4>
+                                                <h4 className="card-middle-price-h4">{item?.price} ₸</h4>
                                             </div>
 
                                         </div>
@@ -69,7 +69,7 @@ function Cards() {
 
                                             <div className="card-bottom-rating">
                                                 <img src={Star} />
-                                                <h4 className="card-bottom-rating-h4">4.7</h4>
+                                                <h4 className="card-bottom-rating-h4">{item?.rating}</h4>
                                             </div>
 
                                         </div>

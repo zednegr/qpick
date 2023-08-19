@@ -36,10 +36,15 @@
 }
 
 .card-middle {
+    width: 100%;
     display: flex;
-    align-items: center;
-    gap: 105px;
+    align-items: flex-start;
+    justify-content: space-between;
     margin-top: 20px;
+}
+
+.card-middle-name {
+    width: 80%;
 }
 
 .card-middle-name-h4 {
@@ -51,6 +56,10 @@
     line-height: normal;
 }
 
+.card-middle-price {
+    width: auto;
+}
+
 .card-middle-price-h4 {
     color: #FFA542;
     font-family: Montserrat;
@@ -58,6 +67,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    white-space: nowrap;
 }
 
 .card-bottom {
