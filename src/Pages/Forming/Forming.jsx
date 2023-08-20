@@ -1,10 +1,42 @@
 // Import SASS
 import "./forming.scss"
 
+// Import Components
+import Loading from "../../components/Loading/Loading";
+
 // Import Images
 import Map from "../../assets/img/map.png"
 
+// Import React Hooks
+import { useState, useEffect, useRef } from "react";
+
+// Import React Router Dom
+import { useParams } from "react-router-dom";
+
+// Import Axios
+import axios from "axios";
+
+
 function Forming() {
+
+    const [data, setGetData] = useState();
+    const [loading, setLoading] = useState(true);
+    const { productId } = useParams();
+
+    useEffect(() => {
+        axios(
+            `https://64e080ca50713530432c5e47.mockapi.io/apple-shop/product/${productId}`
+        )
+            .then((res) => {
+                setGetData(res.data);
+            })
+            .finally(() => {
+                setLoading(false);
+            });
+    }, []);
+    if (loading) {
+        return <Loading />;
+    }
 
     return (
         <section className="forming-section">
@@ -42,26 +74,29 @@ function Forming() {
                     </div>
 
                     <div className="cards-wrapper">
-                        <div className="order-card">
-                            <div className="order-card-top">
-                                <h4 className="order-card-top-h4">Ваш заказ</h4>
-                            </div>
 
-                            <div className="order-card-middle">
-                                <div className="order-card-middle-products">
-                                    <p className="order-card-middle-products-p">Наушники Apple BYZ S852I</p>
-                                    <p className="order-card-middle-products-p">Доставка</p>
-                                    <p className="order-card-middle-products-p">К оплате</p>
+                        {
+                            <div className="order-card">
+                                <div className="order-card-top">
+                                    <h4 className="order-card-top-h4">Ваш заказ</h4>
                                 </div>
 
-                                <div className="order-card-middle-price">
-                                    <p className="order-card-middle-price-p">₸ 2 927</p>
-                                    <p className="order-card-middle-price-p">₸ 2 927</p>
-                                    <p className="order-card-middle-price-p">₸ 2 927</p>
-                                </div>
-                            </div>
+                                <div className="order-card-middle">
+                                    <div className="order-card-middle-products">
+                                        <p className="order-card-middle-products-p">{data?.name}</p>
+                                        <p className="order-card-middle-products-p">Доставка</p>
+                                        <p className="order-card-middle-products-p">К оплате</p>
+                                    </div>
 
-                        </div>
+                                    <div className="order-card-middle-price">
+                                        <p className="order-card-middle-price-p">₸ {data?.price}</p>
+                                        <p className="order-card-middle-price-p">₸ 499</p>
+                                        <p className="order-card-middle-price-p">₸ 2 927</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
 
                         <div className="number-card">
                             <div className="number-card-top">
