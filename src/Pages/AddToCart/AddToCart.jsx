@@ -1,6 +1,9 @@
 // Import SASS
 import "./addtocart.scss"
 
+// Import Components
+import Loading from "../../components/Loading/Loading"
+
 // Import Images
 import HeadPhone from "../../assets/img/card-headphones.png"
 import CounterPlus from "../../assets/svg/counter-plus.svg"
@@ -50,7 +53,7 @@ function AddToCart() {
     }, []); 
 
     if (loading) {
-        return <h1>Loading...</h1>
+        return <Loading />
     }
 
     return (
