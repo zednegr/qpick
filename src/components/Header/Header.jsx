@@ -3,6 +3,7 @@ import "./header.scss"
 
 // Import BoxIcons
 import 'boxicons'
+import { FiShoppingCart, FiHeart } from "react-icons/fi";
 
 // Import NavLink
 import { NavLink } from "react-router-dom"
@@ -31,8 +32,8 @@ function Header() {
                     </div>
 
                     <ul className="nav-list">
-                        <li className="nav-icon"><box-icon name='heart'></box-icon></li>
-                        <li className="nav-icon"><box-icon name='shopping-bag'></box-icon></li>
+                        <li className="nav-icon"><FiHeart size={25} /></li>
+                        <li className="nav-icon"><FiShoppingCart size={25} /></li>
                     </ul>
 
                 </nav>

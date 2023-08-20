@@ -68,23 +68,29 @@ function AddToCart() {
 
                 <div className="addToCart-wrapper">
                     <div className="addToCart-card-map">
+
                         <div className="addToCart-card">
                             <div className="addToCart-card-top">
-                                <div className="addToCart-product">
-                                    <img
-                                        className="addToCart-product-img"
-                                        width={"146px"}
-                                        height={"136px"}
-                                        src={data?.img}
-                                    />
-                                </div>
 
-                                <div className="addToCart-product-name">
-                                    <h4 className="addToCart-product-name-h4">{data?.name}</h4>
-                                    <h4 className="addToCart-product-price-h4">
-                                        {data?.price} ₸
-                                    </h4>
-                                </div>
+                                <NavLink to={`/cards_inner/${data.id}`}>
+                                    <div className="addToCart-product">
+                                        <img
+                                            className="addToCart-product-img"
+                                            width={"146px"}
+                                            height={"136px"}
+                                            src={data?.img}
+                                        />
+                                    </div>
+                                </NavLink>
+
+                                <NavLink to={`/cards_inner/${data.id}`}>
+                                    <div className="addToCart-product-name">
+                                        <h4 className="addToCart-product-name-h4">{data?.name}</h4>
+                                        <h4 className="addToCart-product-price-h4">
+                                            {data?.price} ₸
+                                        </h4>
+                                    </div>
+                                </NavLink>
                             </div>
 
                             <div className="addToCart-middle">
