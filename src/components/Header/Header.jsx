@@ -1,8 +1,7 @@
 // Import SASS
 import "./header.scss"
 
-// Import BoxIcons
-import 'boxicons'
+// Import React Icon
 import { FiShoppingCart, FiHeart } from "react-icons/fi";
 
 // Import NavLink

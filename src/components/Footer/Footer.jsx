@@ -5,7 +5,7 @@ import "./footer.scss"
 import Lang from "../../assets/svg/lang-icon.svg"
 
 // Import React Icon
-import { FaVk, FaInstagram, FaTelegramPlane, FaWhatsapp, FaMousePointer } from "react-icons/fa";
+import { FaVk, FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
 
