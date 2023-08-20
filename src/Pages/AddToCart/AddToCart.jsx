@@ -5,10 +5,9 @@ import "./AddToCart.scss";
 import Loading from "../../components/Loading/Loading";
 
 // Import Images
-import HeadPhone from "../../assets/img/card-headphones.png";
-import CounterPlus from "../../assets/svg/counter-plus.svg";
-import CounterMinus from "../../assets/svg/counter-minus.svg";
 import Map from "../../assets/img/map.png";
+import Empty from "../../assets/svg/empty.svg"
+
 
 // Import React Router Dom
 import { NavLink } from "react-router-dom";
@@ -64,6 +63,26 @@ function AddToCart() {
             <div className="container">
                 <div className="addToCart-start">
                     <h5 className="addToCart-start-h5">Корзина</h5>
+                </div>
+
+                <div className="empty-wrapper">
+                    <div className="empty">
+
+                        <div className="empty-top">
+                            <img src={Empty} alt="Network ERROR" width={'407px'} height={'315px'}/>
+                        </div>
+
+                        <div className="empty-middle">
+                            <div className="empty-middle-info">
+                                <h2 className="empty-middle-info-h2">Корзина пуста</h2>
+                                <p className="empty-middle-info-p">Но это никогда не поздно исправить :)</p>
+                            </div>
+                        </div>
+
+                        <div className="empty-bottom">
+                            <button className="empty-button">В каталог товаров</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="addToCart-wrapper">
