@@ -88,7 +88,7 @@ function AddToCart() {
                                 </div>
 
                                 <div className="addToCart-middle-price">
-                                    <h4 className="addToCart-middle-price-h4">{count * data?.price} ₸</h4>
+                                    <h4 className="addToCart-middle-price-h4">{data?.price} ₸</h4>
                                 </div>
                             </div>
                         </div>
