@@ -4,6 +4,9 @@ import "./footer.scss"
 // Import Images
 import Lang from "../../assets/svg/lang-icon.svg"
 
+// Import React Icon
+import { FaVk, FaInstagram, FaTelegramPlane, FaWhatsapp, FaMousePointer } from "react-icons/fa";
+
 function Footer() {
 
     return (
@@ -40,10 +43,12 @@ function Footer() {
                     </div>
 
                     <div className="footer-social">
-                        <box-icon type='logo' name='vk'></box-icon>
-                        <box-icon name='instagram' type='logo'></box-icon>
-                        <box-icon name='telegram' type='logo'></box-icon>
-                        <box-icon name='whatsapp' type='logo'></box-icon>
+
+                        <li className="footer-social-list"><FaVk size={25} /></li>
+                        <li className="footer-social-list"><FaInstagram size={25} /></li>
+                        <li className="footer-social-list"><FaTelegramPlane size={25} /></li>
+                        <li className="footer-social-list"><FaWhatsapp size={25} /></li>
+
                     </div>
                 </div>
             </div>
