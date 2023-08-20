@@ -5,8 +5,6 @@ import "./cards_inner.scss"
 import Loading from "../../components/Loading/Loading"
 
 // Import Images
-import CardsInner1Img from "../../assets/img/cards-inner-1.png"
-import CardsInner2Img from "../../assets/img/cards-inner-2.png"
 
 // Import React Router Dom
 import { NavLink } from "react-router-dom"

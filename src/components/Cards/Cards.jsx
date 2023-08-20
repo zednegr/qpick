@@ -5,9 +5,6 @@ import "./cards.scss"
 import Loading from "../Loading/Loading.jsx";
 
 // Import Images
-import Case from "../../assets/img/card-case.png"
-import HeadPhones from "../../assets/img/card-headphones.png"
-import AirPods from "../../assets/img/card-airpodspro.png"
 import Star from "../../assets/svg/star.svg"
 
 // Import NavLink
