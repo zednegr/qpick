@@ -32,7 +32,10 @@ function Header() {
 
                     <ul className="nav-list">
                         <li className="nav-icon"><FiHeart size={25} /></li>
-                        <li className="nav-icon"><FiShoppingCart size={25} /></li>
+
+                        <NavLink to={"/addToCart"}>
+                            <li className="nav-icon"><FiShoppingCart size={25} /></li>
+                        </NavLink>
                     </ul>
 
                 </nav>

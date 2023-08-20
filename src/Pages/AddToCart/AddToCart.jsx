@@ -69,7 +69,7 @@ function AddToCart() {
                     <div className="empty">
 
                         <div className="empty-top">
-                            <img src={Empty} alt="Network ERROR" width={'407px'} height={'315px'}/>
+                            <img src={Empty} alt="Network ERROR" width={'407px'} height={'315px'} />
                         </div>
 
                         <div className="empty-middle">
@@ -79,9 +79,11 @@ function AddToCart() {
                             </div>
                         </div>
 
-                        <div className="empty-bottom">
-                            <button className="empty-button">В каталог товаров</button>
-                        </div>
+                        <NavLink to={'/'}>
+                            <div className="empty-bottom">
+                                <button className="empty-button">В каталог товаров</button>
+                            </div>
+                        </NavLink>
                     </div>
                 </div>
 

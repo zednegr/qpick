@@ -86,11 +86,16 @@ function CardsInner() {
                         </div>
 
                         <div className="cards-inner-btns">
+
                             <NavLink to={`/addToCart/${data.id}`}>
-                                <button className="cards-inner-btn">Купить!</button>
+                                <div className="cards-inner-btn-one">
+                                    <button className="cards-inner-btn">Купить!</button>
+                                </div>
                             </NavLink>
 
-                            <button className="cards-inner-btn">Добавить в корзину</button>
+                            <div className="cards-inner-btn-two">
+                                <button className="cards-inner-btn">Добавить в корзину</button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -44,6 +44,7 @@
 .cards-inner-middle-name {
     width: 530px;
 }
+
 .cards-inner-middle-name-h4 {
     color: #1C1C27;
     font-family: Montserrat;
@@ -117,17 +118,26 @@
     gap: 31px;
 }
 
-.cards-inner-btn {
-    border-radius: 10px;
-    background: #101010;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.50);
-    padding: 10px 42px;
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    cursor: pointer;
+.cards-inner-btn-one {
+    width: 254px;
+
+    .cards-inner-btn {
+        width: 100%;
+        border-radius: 10px;
+        background: #101010;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.50);
+        padding: 10px 42px;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+    }
+}
+
+.cards-inner-btn-two {
+    width: 254px;
 }
