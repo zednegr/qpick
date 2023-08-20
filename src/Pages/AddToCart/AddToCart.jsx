@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom"
 import { useParams } from "react-router-dom"
 
 // Import React Hooks
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 // Import Axios
 import axios from "axios"
@@ -24,27 +24,30 @@ function AddToCart() {
     const [loading, setLoading] = useState(true)
     const { productId } = useParams()
 
-
-    // Counter 
+    // Counter
+    const [productPrice, setProductPrice] = useState()
     const [count, setCount] = useState(1)
+    const [price, setPrice] = useState(setProductPrice);
 
     const plus = () => {
-        setCount(count + 1);
+        setCount(count + 1)
     };
 
     const minus = () => {
         if (count > 1) {
-            setCount(count - 1);
+            setCount(count - 1)
         }
     };
 
     useEffect(() => {
         axios(`https://64e080ca50713530432c5e47.mockapi.io/apple-shop/product/${productId}`)
-            .then((res) => setGetData(res.data))
-            .finally(() => {
-                setLoading(false)
+            .then((res) => {
+                setGetData(res.data);
             })
-    }, [])
+            .finally(() => {
+                setLoading(false);
+            });
+    }, []); 
 
     if (loading) {
         return <h1>Loading...</h1>
@@ -82,7 +85,7 @@ function AddToCart() {
                                 </div>
 
                                 <div className="addToCart-middle-price">
-                                    <h4 className="addToCart-middle-price-h4">{data?.price} ₸</h4>
+                                    <h4 className="addToCart-middle-price-h4">{count * data?.price} ₸</h4>
                                 </div>
                             </div>
                         </div>

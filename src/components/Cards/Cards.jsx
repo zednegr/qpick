@@ -42,7 +42,6 @@ function Cards() {
                 </div>
                 <div className="cards-wrapper">
 
-
                     {
                         data?.map(item => {
                             return (
