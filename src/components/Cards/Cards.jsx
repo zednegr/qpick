@@ -1,6 +1,9 @@
 // Import SASS
 import "./cards.scss"
 
+// Import Components
+import Loading from "../Loading/Loading.jsx";
+
 // Import Images
 import Case from "../../assets/img/card-case.png"
 import HeadPhones from "../../assets/img/card-headphones.png"
@@ -31,7 +34,7 @@ function Cards() {
     }, [])
 
     if (loading) {
-        return <h1>Loading...</h1>
+        return <Loading />
     }
 
     return (

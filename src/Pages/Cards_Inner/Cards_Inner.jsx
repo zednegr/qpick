@@ -1,6 +1,9 @@
 // Import SASS
 import "./cards_inner.scss"
 
+// Import Components
+import Loading from "../../components/Loading/Loading"
+
 // Import Images
 import CardsInner1Img from "../../assets/img/cards-inner-1.png"
 import CardsInner2Img from "../../assets/img/cards-inner-2.png"
@@ -31,7 +34,7 @@ function CardsInner() {
     }, [])
 
     if (loading) {
-        return <h1>Loading...</h1>
+        return <Loading />
     }
 
     console.log(data);
