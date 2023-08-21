@@ -12,7 +12,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { FaTrashCan } from "react-icons/fa6";
 
 // Import React Hooks
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 // Import React Router Dom
 import { NavLink } from "react-router-dom"
@@ -20,11 +20,23 @@ import { NavLink } from "react-router-dom"
 // Import Axios
 import axios from "axios"
 
+// Import React Prime
+import { Toast } from 'primereact/toast';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
+
 function Cart() {
 
     const [getData, setGetData] = useState()
     const [loading, setLoading] = useState(true);
     const [refresh, setRefresh] = useState()
+
+    // React Prime Sucsess
+    const toast = useRef(null);
+    const showSuccess = () => {
+        toast.current.show({ severity: 'success', summary: 'Success', detail: 'Message Content', life: 3000 });
+    }
+
 
     useEffect(() => {
         axios('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart')
@@ -41,6 +53,7 @@ function Cart() {
         axios.delete(`https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart/${id}`)
             .then((res) => {
                 setRefresh(false)
+                showSuccess()
             })
     }
 
@@ -82,6 +95,8 @@ function Cart() {
         <section className="cart-section">
             <div className="conatiner">
                 <div className="cart-wrapper">
+                    <Toast ref={toast} />
+
 
                     {
                         getData?.map(item => {
