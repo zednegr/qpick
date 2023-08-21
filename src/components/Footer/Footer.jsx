@@ -30,7 +30,10 @@ function Footer() {
                             <NavLink to={'/cart'}>
                                 <p className="footer-left-item-p">Корзина</p>
                             </NavLink>
-                            <p className="footer-left-item-p">Контакты</p>
+
+                            <NavLink to={'/contact'}>
+                                <p className="footer-left-item-p">Контакты</p>
+                            </NavLink>
                         </div>
 
                     </div>
@@ -60,7 +63,7 @@ function Footer() {
                         <NavLink to={'https://t.me/ZeD_BaT'}>
                             <li className="footer-social-list"><FaTelegramPlane size={25} /></li>
                         </NavLink>
-                        
+
                         <li className="footer-social-list"><FaWhatsapp size={25} /></li>
 
                     </div>
