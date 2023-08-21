@@ -1,0 +1,30 @@
+.favorite-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite-info-h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 50px;
+    color: #000;
+    animation: typing 3.5s steps(180, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
