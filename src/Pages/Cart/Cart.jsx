@@ -4,6 +4,9 @@ import "./Cart.scss"
 // Import Components
 import Loading from "../../components/Loading/Loading"
 
+// Import Images
+import Empty from "../../assets/svg/empty.svg"
+
 // React Icons 
 import { AiFillDelete } from "react-icons/ai";
 import { FaTrashCan } from "react-icons/fa6";
@@ -43,6 +46,36 @@ function Cart() {
 
     if (loading) {
         return <Loading />;
+    }
+
+    if (getData.length === 0) {
+        return (
+            <div className="empty-wrapper">
+                <div className="empty">
+                    <div className="empty-wrapper">
+                        <div className="empty">
+
+                            <div className="empty-top">
+                                <img src={Empty} alt="Network ERROR" width={'407px'} height={'315px'} />
+                            </div>
+
+                            <div className="empty-middle">
+                                <div className="empty-middle-info">
+                                    <h2 className="empty-middle-info-h2">Корзина пуста</h2>
+                                    <p className="empty-middle-info-p">Но это никогда не поздно исправить :)</p>
+                                </div>
+                            </div>
+
+                            <NavLink to={'/'}>
+                                <div className="empty-bottom">
+                                    <button className="empty-button">В каталог товаров</button>
+                                </div>
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
     }
 
     return (
