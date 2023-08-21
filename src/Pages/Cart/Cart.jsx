@@ -34,7 +34,7 @@ function Cart() {
     // React Prime Sucsess
     const toast = useRef(null);
     const showSuccess = () => {
-        toast.current.show({ severity: 'success', summary: 'Success', detail: 'Message Content', life: 3000 });
+        toast.current.show({ severity: 'success', summary: 'O\'chirildi !', life: 3000 });
     }
 
 
