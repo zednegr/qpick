@@ -45,7 +45,7 @@ function Cards() {
                     {
                         data?.map(item => {
                             return (
-                                <NavLink to={`/cards_inner/${item.id}`}>
+                                <NavLink to={`/cards_inner/${item.id}`} key={item.id}>
                                     <div className="card">
 
                                         <div className="card-top">
