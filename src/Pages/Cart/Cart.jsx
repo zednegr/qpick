@@ -71,14 +71,6 @@ function Cart() {
                                             </div>
                                         </NavLink>
                                     </div>
-
-                                    <div className="addToCart-middle">
-                                        <div className="addToCart-middle-price">
-                                            <h4 className="addToCart-middle-price-h4">
-                                                {item?.getData.price}₸
-                                            </h4>
-                                        </div>
-                                    </div>
                                 </div>
                             )
 
