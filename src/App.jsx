@@ -14,7 +14,6 @@ import './App.css'
 
 function App() {
 
-  const [til, setTil] = useState('uz')
 
   return (
     <>
@@ -28,7 +27,7 @@ function App() {
         <Route path="/create" element={<Create />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer til={til} setTil={setTil}/>
+      <Footer />
     </>
   )
 }

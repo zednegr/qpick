@@ -11,11 +11,12 @@ import { FaVk, FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-function Footer({til, setTil}) {
+// Import Localization
+import { content } from "../../Localization/content";
 
+function Footer() {
 
-    console.log(til);
-
+    const [lang, setLang] = useState('uz')
 
     return (
         <section className="footer-section">
@@ -31,13 +32,13 @@ function Footer({til, setTil}) {
                         </NavLink>
 
                         <div className="footer-left-item">
-                            <p className="footer-left-item-p">{til == 'uz' ? 'Saqlanganlar' : 'Избранное'}</p>
+                            <p className="footer-left-item-p">{lang == 'uz' ? 'Saqlanganlar' : 'Избранное'}</p>
                             <NavLink to={'/cart'}>
-                                <p className="footer-left-item-p">Корзина</p>
+                                <p className="footer-left-item-p">{lang == 'uz' ? 'Sotib Olish' : 'Корзина'}</p>
                             </NavLink>
 
                             <NavLink to={'/contact'}>
-                                <p className="footer-left-item-p">Контакты</p>
+                                <p className="footer-left-item-p">{lang == 'uz' ? 'Biz Bilan Bog\'lanish' : 'Контакты'}</p>
                             </NavLink>
                         </div>
 
@@ -46,19 +47,18 @@ function Footer({til, setTil}) {
                     <div className="footer-right">
 
                         <div className="footer-right-service">
-                            <h5 className="footer-right-service-h5">Условия сервиса</h5>
+                            <h5 className="footer-right-service-h5">{lang == 'uz' ? 'Xizmatlar' : 'Условия сервиса'}</h5>
                         </div>
 
                         <div className="footer-right-lang-item">
                             <img className="footer-right-lang-img" src={Lang} />
-                            <select onChange={(evt) => {
-                                setTil(evt.target.value)
-                            }}>
+                            <select onChange={(evt) => { setLang(evt.target.value) }}>
                                 <option value="uz">uz</option>
                                 <option value="ru">ru</option>
                             </select>
-                            <p className="footer-right-lang-item-p" >Рус</p>
-                            <p className="footer-right-lang-item-p">Eng</p>
+                            <p className="footer-right-lang-item-p">Рус</p>
+                            <p className="footer-right-lang-item-p">Uz</p>
+
                         </div>
 
                     </div>
