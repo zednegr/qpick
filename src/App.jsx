@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom"
+import { useState } from "react"
 
 import Footer from './components/Footer/Footer'
 import Header from "./components/Header/Header"
@@ -13,6 +14,8 @@ import './App.css'
 
 function App() {
 
+  const [til, setTil] = useState('uz')
+
   return (
     <>
       <Header />
@@ -25,7 +28,7 @@ function App() {
         <Route path="/create" element={<Create />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      <Footer til={til} setTil={setTil}/>
     </>
   )
 }

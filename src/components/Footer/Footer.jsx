@@ -9,8 +9,13 @@ import { FaVk, FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 // Import NavLink
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
-function Footer() {
+function Footer({til, setTil}) {
+
+
+    console.log(til);
+
 
     return (
         <section className="footer-section">
@@ -26,7 +31,7 @@ function Footer() {
                         </NavLink>
 
                         <div className="footer-left-item">
-                            <p className="footer-left-item-p">Избранное</p>
+                            <p className="footer-left-item-p">{til == 'uz' ? 'Saqlanganlar' : 'Избранное'}</p>
                             <NavLink to={'/cart'}>
                                 <p className="footer-left-item-p">Корзина</p>
                             </NavLink>
@@ -46,7 +51,13 @@ function Footer() {
 
                         <div className="footer-right-lang-item">
                             <img className="footer-right-lang-img" src={Lang} />
-                            <p className="footer-right-lang-item-p">Рус</p>
+                            <select onChange={(evt) => {
+                                setTil(evt.target.value)
+                            }}>
+                                <option value="uz">uz</option>
+                                <option value="ru">ru</option>
+                            </select>
+                            <p className="footer-right-lang-item-p" >Рус</p>
                             <p className="footer-right-lang-item-p">Eng</p>
                         </div>
 
