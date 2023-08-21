@@ -52,13 +52,13 @@ function Footer() {
 
                         <div className="footer-right-lang-item">
                             <img className="footer-right-lang-img" src={Lang} />
-                            <select onChange={(evt) => { setLang(evt.target.value) }}>
-                                <option value="uz">uz</option>
-                                <option value="ru">ru</option>
-                            </select>
-                            <p className="footer-right-lang-item-p">Рус</p>
-                            <p className="footer-right-lang-item-p">Uz</p>
 
+                            <div className="select-style">
+                                <select onChange={(evt) => { setLang(evt.target.value) }}>
+                                    <option value="uz">uz</option>
+                                    <option value="ru">ru</option>
+                                </select>
+                            </div>
                         </div>
 
                     </div>
