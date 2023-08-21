@@ -44,7 +44,6 @@ function Cart() {
     if (loading) {
         return <Loading />;
     }
-    console.log(getData);
 
     return (
         <section className="cart-section">
@@ -52,8 +51,7 @@ function Cart() {
                 <div className="cart-wrapper">
 
                     {
-                        getData?.map((item, index) => {
-                            console.log(item.getData.name);
+                        getData?.map(item => {
                             return (
 
                                 <div className="addToCart-card" key={item.getData.id}>
@@ -84,10 +82,8 @@ function Cart() {
                                     </div>
                                 </div>
                             )
-
                         })
                     }
-
 
                 </div>
             </div>
