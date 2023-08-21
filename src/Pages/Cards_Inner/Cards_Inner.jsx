@@ -33,17 +33,12 @@ function CardsInner() {
         axios.post('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart', {
             getData
         })
-            .then(res => {
-                console.log(res.data);
-            })
-
     }
 
     if (loading) {
         return <Loading />
     }
 
-    console.log(data);
     return (
         <section className="cards_inner_section">
             <div className="container">
