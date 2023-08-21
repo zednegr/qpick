@@ -12,6 +12,8 @@
 }
 
 .addToCart-wrapper {
+    width: 100%;
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
 }
@@ -257,6 +259,7 @@
 
 .empty-bottom {
     width: 540px;
+
     .empty-button {
         width: 100%;
         color: #FFF;
