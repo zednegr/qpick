@@ -63,7 +63,7 @@ function Cart() {
 
                                     <div className="addToCart-card-top">
 
-                                        <NavLink to={`/cards_inner/${item.id}`}>
+                                        <NavLink to={`/cards_inner/${item.getData?.id}`}>
                                             <div className="addToCart-product">
                                                 <img
                                                     className="addToCart-product-img"
@@ -74,7 +74,7 @@ function Cart() {
                                             </div>
                                         </NavLink>
 
-                                        <NavLink to={`/cards_inner/${item.id}`}>
+                                        <NavLink to={`/cards_inner/${item.getData?.id}`}>
                                             <div className="addToCart-product-name">
                                                 <h4 className="addToCart-product-name-h4">{item?.getData?.name}</h4>
                                                 <h4 className="addToCart-product-price-h4">{item?.getData.price} ₸</h4>
