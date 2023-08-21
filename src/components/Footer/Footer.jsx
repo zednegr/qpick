@@ -7,6 +7,9 @@ import Lang from "../../assets/svg/lang-icon.svg"
 // Import React Icon
 import { FaVk, FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
+// Import NavLink
+import { NavLink } from "react-router-dom";
+
 function Footer() {
 
     return (
@@ -16,13 +19,17 @@ function Footer() {
 
                     <div className="footer-left">
 
-                        <div className="footer-left-brand">
-                            <h5 className="footer-left-brand-h5">QPICK</h5>
-                        </div>
+                        <NavLink to={'/'}>
+                            <div className="footer-left-brand">
+                                <h5 className="footer-left-brand-h5">QPICK</h5>
+                            </div>
+                        </NavLink>
 
                         <div className="footer-left-item">
                             <p className="footer-left-item-p">Избранное</p>
-                            <p className="footer-left-item-p">Корзина</p>
+                            <NavLink to={'/cart'}>
+                                <p className="footer-left-item-p">Корзина</p>
+                            </NavLink>
                             <p className="footer-left-item-p">Контакты</p>
                         </div>
 
@@ -45,8 +52,15 @@ function Footer() {
                     <div className="footer-social">
 
                         <li className="footer-social-list"><FaVk size={25} /></li>
-                        <li className="footer-social-list"><FaInstagram size={25} /></li>
-                        <li className="footer-social-list"><FaTelegramPlane size={25} /></li>
+
+                        <NavLink to={"https://www.instagram.com/zedboi/"}>
+                            <li className="footer-social-list"><FaInstagram size={25} /></li>
+                        </NavLink>
+
+                        <NavLink to={'https://t.me/ZeD_BaT'}>
+                            <li className="footer-social-list"><FaTelegramPlane size={25} /></li>
+                        </NavLink>
+                        
                         <li className="footer-social-list"><FaWhatsapp size={25} /></li>
 
                     </div>
