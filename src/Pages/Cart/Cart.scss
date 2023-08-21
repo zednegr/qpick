@@ -1,0 +1,14 @@
+.cart-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.addToCart-card {
+    // margin-bottom: 10px;
+}
