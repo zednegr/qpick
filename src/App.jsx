@@ -8,8 +8,9 @@ import CardsInner from "./Pages/Cards_Inner/Cards_Inner"
 import Home from "./Pages/Home/Home"
 import AddToCart from "./Pages/AddToCart/AddToCart"
 import Forming from "./Pages/Forming/Forming"
-import './App.css'
 import Create from "./Pages/Create/Create"
+import Cart from "./Pages/Cart/Cart"
+import './App.css'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cards_inner/:productId" element={<CardsInner />} />
         <Route path="/addToCart/:productId" element={<AddToCart />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/forming/:productId" element={<Forming />} />
         <Route path="/create" element={<Create />} />
       </Routes>

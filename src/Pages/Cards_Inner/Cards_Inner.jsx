@@ -31,6 +31,16 @@ function CardsInner() {
             })
     }, [])
 
+    function DataFetch(data) {
+        axios.post('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart',{
+           data
+        })
+        .then(res => {
+            console.log(res.data);
+        })
+
+    }
+
     if (loading) {
         return <Loading />
     }
@@ -94,7 +104,7 @@ function CardsInner() {
                             </NavLink>
 
                             <div className="cards-inner-btn-two">
-                                <button className="cards-inner-btn">Добавить в корзину</button>
+                                <button className="cards-inner-btn" onClick={()=>DataFetch(data)}>Добавить в корзину</button>
                             </div>
                         </div>
                     </div>

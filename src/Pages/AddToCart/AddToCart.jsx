@@ -54,8 +54,40 @@ function AddToCart() {
                 setLoading(false);
             });
     }, []);
+
     if (loading) {
         return <Loading />;
+    }
+
+
+    if (data.length === 0) {
+        return (
+            <div className="empty-wrapper">
+                <div className="empty">
+                    <div className="empty-wrapper">
+                        <div className="empty">
+
+                            <div className="empty-top">
+                                <img src={Empty} alt="Network ERROR" width={'407px'} height={'315px'} />
+                            </div>
+
+                            <div className="empty-middle">
+                                <div className="empty-middle-info">
+                                    <h2 className="empty-middle-info-h2">Корзина пуста</h2>
+                                    <p className="empty-middle-info-p">Но это никогда не поздно исправить :)</p>
+                                </div>
+                            </div>
+
+                            <NavLink to={'/'}>
+                                <div className="empty-bottom">
+                                    <button className="empty-button">В каталог товаров</button>
+                                </div>
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
     }
 
     return (
@@ -65,27 +97,7 @@ function AddToCart() {
                     <h5 className="addToCart-start-h5">Корзина</h5>
                 </div>
 
-                <div className="empty-wrapper">
-                    <div className="empty">
 
-                        <div className="empty-top">
-                            <img src={Empty} alt="Network ERROR" width={'407px'} height={'315px'} />
-                        </div>
-
-                        <div className="empty-middle">
-                            <div className="empty-middle-info">
-                                <h2 className="empty-middle-info-h2">Корзина пуста</h2>
-                                <p className="empty-middle-info-p">Но это никогда не поздно исправить :)</p>
-                            </div>
-                        </div>
-
-                        <NavLink to={'/'}>
-                            <div className="empty-bottom">
-                                <button className="empty-button">В каталог товаров</button>
-                            </div>
-                        </NavLink>
-                    </div>
-                </div>
 
                 <div className="addToCart-wrapper">
                     <div className="addToCart-card-map">
