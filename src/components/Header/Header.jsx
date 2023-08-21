@@ -25,7 +25,7 @@ function Header() {
                         <div className="navbar-filter">
                             <box-icon name='mobile-alt'></box-icon>
                             <h4 className="navbar-filter-h4">Выбрать модель телефона</h4>
-                            <select name="" id=""></select>
+                            <select></select>
                         </div>
 
                     </div>
