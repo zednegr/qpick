@@ -186,6 +186,8 @@ function AddToCart() {
                 </div>
             </div>
         </section>
+
+        
     );
 }
 
