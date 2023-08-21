@@ -1,5 +1,5 @@
 // Import SASS
-import "./contact.scss"
+import "./Contact.scss"
 
 // Import Images
 import ContactMap from "../../assets/img/contact-map.png"

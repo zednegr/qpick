@@ -1,5 +1,5 @@
 // Import SASS 
-import "./cart.scss"
+import "./Cart.scss"
 
 // Import Components
 import Loading from "../../components/Loading/Loading"

@@ -1,5 +1,5 @@
 // Import SASS
-import "./hero.scss"
+import "./Hero.scss"
 
 // Import Images
 import Phone from "../../assets/img/hero-iphone.png"

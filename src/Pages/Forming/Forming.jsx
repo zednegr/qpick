@@ -1,5 +1,5 @@
 // Import SASS
-import "./forming.scss"
+import "./Forming.scss"
 
 // Import Components
 import Loading from "../../components/Loading/Loading";

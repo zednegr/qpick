@@ -1,5 +1,5 @@
 // Import SASS
-import "./create.scss"
+import "./Create.scss"
 
 // Import React Hooks
 import { useState, useRef } from "react"

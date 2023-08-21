@@ -1,6 +1,6 @@
 import Cards from "../../components/Cards/Cards"
 import Hero from "../../components/Hero/Hero"
-import "./home.scss"
+import "./Home.scss"
 
 function Home() {
     return (

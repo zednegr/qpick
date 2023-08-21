@@ -1,5 +1,5 @@
 // Import SASS
-import "./cards_inner.scss"
+import "./Cards_Inner.scss"
 
 // Import Components
 import Loading from "../../components/Loading/Loading"

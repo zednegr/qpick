@@ -1,5 +1,5 @@
 // Import SASS
-import "./footer.scss"
+import "./Footer.scss"
 
 // Import Images
 import Lang from "../../assets/svg/lang-icon.svg"
