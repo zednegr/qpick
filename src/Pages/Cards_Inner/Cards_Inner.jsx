@@ -4,8 +4,6 @@ import "./Cards_Inner.scss"
 // Import Components
 import Loading from "../../components/Loading/Loading"
 
-// Import Images
-
 // Import React Router Dom
 import { NavLink } from "react-router-dom"
 import { useParams } from "react-router-dom"
@@ -32,12 +30,12 @@ function CardsInner() {
     }, [])
 
     function DataFetch(getData) {
-        axios.post('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart',{
-           getData
+        axios.post('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart', {
+            getData
         })
-        .then(res => {
-            console.log(res.data);
-        })
+            .then(res => {
+                console.log(res.data);
+            })
 
     }
 
@@ -104,7 +102,7 @@ function CardsInner() {
                             </NavLink>
 
                             <div className="cards-inner-btn-two">
-                                <button className="cards-inner-btn" onClick={()=>DataFetch(data)}>Добавить в корзину</button>
+                                <button className="cards-inner-btn" onClick={() => DataFetch(data)}> Добавить в корзину</button>
                             </div>
                         </div>
                     </div>
