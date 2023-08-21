@@ -7,6 +7,9 @@ import Loading from "../../components/Loading/Loading";
 // Import Images
 import Map from "../../assets/img/map.png"
 
+// Import React Icons
+import { FaLocationDot } from "react-icons/fa6";
+
 // Import React Hooks
 import { useState, useEffect, useRef } from "react";
 
@@ -58,7 +61,7 @@ function Forming() {
                         </div>
 
                         <div className="input-card-bottom">
-                            <h4 className="input-card-bottom-h4">Адрес доставки</h4>
+                            <h4 className="input-card-bottom-h4"><FaLocationDot size={'20px'}/> Адрес доставки</h4>
 
                             <div className="inputs-wrapper">
                                 <input className="input" type="text" placeholder="Город" />

@@ -189,7 +189,6 @@ function AddToCart() {
             </div>
         </section>
 
-        
     );
 }
 
