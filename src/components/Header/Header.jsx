@@ -31,10 +31,10 @@ function Header() {
                     </div>
 
                     <ul className="nav-list">
-                        <li className="nav-icon"><FiHeart size={25} /></li>
+                        <li className="nav-icon"><FiHeart size={'25px'} /></li>
 
                         <NavLink to={"/cart"}>
-                            <li className="nav-icon"><FiShoppingCart size={25} /></li>
+                            <li className="nav-icon"><FiShoppingCart size={'25px'} /></li>
                         </NavLink>
                     </ul>
 
