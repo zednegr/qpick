@@ -50,7 +50,7 @@ function Forming() {
                     <div className="input-card">
                         <div className="input-card-top">
                             <h4 className="input-card-top-h4">Доставка курьером</h4>
-                            <h4 className="input-card-top-price-h4">499 ₸</h4>
+                            <h4 className="input-card-top-price-h4">0 ₸</h4>
                         </div>
 
                         <div className="input-card-middle">
@@ -90,8 +90,8 @@ function Forming() {
 
                                     <div className="order-card-middle-price">
                                         <p className="order-card-middle-price-p">₸ {data?.price}</p>
-                                        <p className="order-card-middle-price-p">₸ 499</p>
-                                        <p className="order-card-middle-price-p">₸ 2 927</p>
+                                        <p className="order-card-middle-price-p">₸ 0</p>
+                                        <p className="order-card-middle-price-p">₸ {data?.price}</p>
                                     </div>
                                 </div>
 

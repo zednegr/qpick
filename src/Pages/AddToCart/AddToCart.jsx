@@ -8,6 +8,8 @@ import Loading from "../../components/Loading/Loading";
 import Map from "../../assets/img/map.png";
 import Empty from "../../assets/svg/empty.svg"
 
+// Import React Icons
+import { FaTruck } from "react-icons/fa6";
 
 // Import React Router Dom
 import { NavLink } from "react-router-dom";
@@ -31,7 +33,7 @@ function AddToCart() {
 
     const [productPrice, setProductPrice] = useState();
     const [price, setPrice] = useState(setProductPrice);
-    const [delivery, setDelivery] = useState(499)
+    const [delivery, setDelivery] = useState(0)
 
     const plus = () => {
         setCount(count + 1);
@@ -161,7 +163,7 @@ function AddToCart() {
 
                                 <div className="addToCart-middle-map-price">
                                     <h4 className="addToCart-middle-delivery-h4">
-                                        Доставка курьером
+                                       <FaTruck size={'20px'}/> Доставка курьером
                                     </h4>
                                     <h4 className="addToCart-middle-map-price-h4">{delivery} ₸</h4>
                                 </div>

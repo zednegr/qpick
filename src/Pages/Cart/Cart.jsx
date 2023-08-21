@@ -6,6 +6,7 @@ import Loading from "../../components/Loading/Loading"
 
 // React Icons 
 import { AiFillDelete } from "react-icons/ai";
+import { FaTrashCan } from "react-icons/fa6";
 
 // Import React Hooks
 import { useState, useEffect } from "react"
@@ -58,7 +59,7 @@ function Cart() {
                                 <div className="addToCart-card" key={item.getData.id}>
 
                                     <div className="cart-delete-box">
-                                        <button className="cart-delete-btn" onClick={() => onDelete(item.id)}><AiFillDelete /></button>
+                                        <button className="cart-delete-btn" onClick={() => onDelete(item.id)}><FaTrashCan /></button>
                                     </div>
 
                                     <div className="addToCart-card-top">
