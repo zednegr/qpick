@@ -8,7 +8,6 @@ import Loading from "../../components/Loading/Loading"
 import { useState, useEffect } from "react"
 
 // Import React Router Dom
-import { useParams } from "react-router-dom"
 import { NavLink } from "react-router-dom"
 
 // Import Axios
@@ -18,12 +17,6 @@ function Cart() {
 
     const [getData, setGetData] = useState()
     const [loading, setLoading] = useState(true);
-    const { productId } = useParams();
-
-
-    const [productPrice, setProductPrice] = useState();
-    const [price, setPrice] = useState(setProductPrice);
-    const [delivery, setDelivery] = useState(499)
 
     useEffect(() => {
         axios('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart')
