@@ -9,10 +9,15 @@ import { NavLink } from "react-router-dom"
 import { useParams } from "react-router-dom"
 
 // Import React Hooks
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 // Import Axios
 import axios from "axios"
+
+// Import React Prime
+import { Toast } from 'primereact/toast';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
 
 
 function CardsInner() {
@@ -20,6 +25,12 @@ function CardsInner() {
     const [data, setGetData] = useState()
     const [loading, setLoading] = useState(true)
     const { productId } = useParams()
+
+    // React Prime Sucsess
+    const toast = useRef(null);
+    const showSuccess = () => {
+        toast.current.show({ severity: 'success', summary: 'Success', detail: 'Message Content', life: 3000 });
+    }
 
     useEffect(() => {
         axios(`https://64e080ca50713530432c5e47.mockapi.io/apple-shop/product/${productId}`)
@@ -33,6 +44,10 @@ function CardsInner() {
         axios.post('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart', {
             getData
         })
+
+        .then(res => {
+            showSuccess()
+        })
     }
 
     if (loading) {
@@ -41,6 +56,7 @@ function CardsInner() {
 
     return (
         <section className="cards_inner_section">
+            <Toast ref={toast} />
             <div className="container">
                 <div className="cards_inner_start">
                     <h5 className="cards_inner_start_h5">Автодержатель</h5>
@@ -97,7 +113,7 @@ function CardsInner() {
                             </NavLink>
 
                             <div className="cards-inner-btn-two">
-                                <button className="cards-inner-btn" onClick={() => DataFetch(data)}> Добавить в корзину</button>
+                                <button className="cards-inner-btn" onClick={() => {DataFetch(data)}}> Добавить в корзину</button>
                             </div>
                         </div>
                     </div>
