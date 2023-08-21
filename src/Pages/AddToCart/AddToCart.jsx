@@ -97,8 +97,6 @@ function AddToCart() {
                     <h5 className="addToCart-start-h5">Корзина</h5>
                 </div>
 
-
-
                 <div className="addToCart-wrapper">
                     <div className="addToCart-card-map">
 

@@ -31,9 +31,9 @@ function CardsInner() {
             })
     }, [])
 
-    function DataFetch(data) {
+    function DataFetch(getData) {
         axios.post('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/apple-cart',{
-           data
+           getData
         })
         .then(res => {
             console.log(res.data);
