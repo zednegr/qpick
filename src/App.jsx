@@ -11,6 +11,7 @@ import Create from "./Pages/Create/Create"
 import Cart from "./Pages/Cart/Cart"
 import Contact from "./Pages/Contact/Contact"
 import './App.css'
+import Favorite from "./Pages/Favorite/Favorite"
 
 function App() {
 
@@ -20,12 +21,13 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/favorite" element={<Favorite />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/cards_inner/:productId" element={<CardsInner />} />
         <Route path="/addToCart/:productId" element={<AddToCart />} />
-        <Route path="/cart" element={<Cart />} />
         <Route path="/forming/:productId" element={<Forming />} />
-        <Route path="/create" element={<Create />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/create" element={<Create />} />
       </Routes>
       <Footer />
     </>
