@@ -6,6 +6,7 @@ import ContactMap from "../../assets/img/contact-map.png"
 
 // Import React Icons
 import { FaWhatsapp, FaVk, FaInstagram, FaTelegram } from "react-icons/fa6";
+import { FiPhoneCall } from "react-icons/fi";
 
 function Contact() {
 
@@ -30,6 +31,16 @@ function Contact() {
                         <div className="contact-social-box"><FaVk /></div>
                         <div className="contact-social-box"><FaInstagram /></div>
                         <div className="contact-social-box"><FaTelegram /></div>
+                    </div>
+                </div>
+
+                <div className="contact-number-icon-wrapper">
+                    <div className="contact-number-icon">
+                        <FiPhoneCall />
+                    </div>
+
+                    <div className="contact-number">
+                        <h2 className="contact-number-h2">+7 777 777 77 77</h2>
                     </div>
                 </div>
             </div>

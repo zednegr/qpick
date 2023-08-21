@@ -1,6 +1,6 @@
 .contact-section {
     padding-top: 50px;
-    padding-bottom: 151px;
+    padding-bottom: 101px;
 }
 
 .contact-wrapper {
@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: start;
     padding: 20px;
+    cursor: pointer;
 }
 
 .contact-map-name {
@@ -46,11 +47,46 @@
 }
 
 .contact-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
     .contact-social-box {
         width: 97px;
         height: 97px;
         background-color: #fff;
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+}
 
+.contact-number-icon-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 28px;
+    padding-top: 40px;
+    margin-left: 100px;
+}
+
+.contact-number-icon {
+    font-size: 30px;
+    color: #000;
+}
+.contact-number {
+    .contact-number-h2 {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
 }
