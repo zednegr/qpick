@@ -1,5 +1,5 @@
 // Import SASS
-import "./header.scss"
+import "./Header.scss"
 
 // Import React Icon
 import { FiShoppingCart, FiHeart } from "react-icons/fi";
