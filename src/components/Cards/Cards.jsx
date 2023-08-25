@@ -22,7 +22,7 @@ function Cards() {
     const [data, setGetData] = useState()
     const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
+    useEffect(() => {-
         axios('https://64e080ca50713530432c5e47.mockapi.io/apple-shop/product')
             .then((res) => setGetData(res.data))
             .finally(() => {
