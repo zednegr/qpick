@@ -57,7 +57,7 @@ function Cards() {
                                             <div className="card-middle-name">
                                                 <h4 className="card-middle-name-h4">{item?.name.length > 20 ? item?.name.slice(0, 40) + "..." : item?.name}</h4>
                                             </div>
-<h1>fafafas </h1>
+
                                             <div className="card-middle-price">
                                                 <h4 className="card-middle-price-h4">{item?.price} ₸</h4>
                                             </div>
