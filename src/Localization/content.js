@@ -4,6 +4,6 @@ export const content = {
     },
 
     ru: {
-        saved: 'Избранное',
+        saved: 'Избранне',
     }
 }
